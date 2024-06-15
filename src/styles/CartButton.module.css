@@ -1,0 +1,21 @@
+/* src/styles/Cart.module.css */
+
+.cart_container {
+  position: relative; /* 使得內部的 CartPopup 可以相對定位 */
+  display: inline-block; /* 使容器根據內容自適應寬度 */
+}
+
+.cart_container button {
+  background: none; /* 移除默認按鈕樣式 */
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.cart_container button img {
+  width: 32px; /* 設置圖片大小 */
+  height: 32px;
+  max-width: 32px; /* 限制圖片最大寬度 */
+  max-height: 32px; /* 限制圖片最大高度 */
+}

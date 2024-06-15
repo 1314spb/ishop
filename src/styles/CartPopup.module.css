@@ -1,0 +1,123 @@
+.CartPopup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 10px;
+  min-width: 400px;
+  max-width: 700px;
+  transition: all 0.3s;
+}
+
+.CartPopup h4 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.CartPopup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.CartPopup li {
+  display: grid;
+  grid-template-columns: 40% 40px 1fr 1fr 1fr 1fr auto;
+  align-items: left;
+  padding: 3px 0;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s ease;
+}
+
+.CartPopup li:last-child {
+  border-bottom: none;
+}
+
+.ItemName {
+  text-align: left;
+}
+
+.QuantityInput {
+  width: 40px;
+  text-align: center;
+}
+
+.ItemPrice, .ItemTotal {
+  text-align: right;
+  margin: 0 5px;
+}
+
+.ItemEqual, .ItemTime {
+  margin: 0 5px;
+}
+
+.ItemRemove {
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+  transition: 0.3s ease;
+}
+
+.ItemRemove:hover {
+  background-color: #ff1a1a;
+  color: white;
+}
+
+.removing {
+  opacity: 0; /* Fades out the element */
+  transform: translateX(-20px); /* Moves the element slightly to the left */
+}
+
+.CartPopup hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clearButton, .checkOutButton {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  transition: 0.3s ease;
+}
+
+.clearButton {
+  color: black;
+  padding: 5px 10px;
+}
+
+.clearButton:hover {
+  background-color: #ff1a1a;
+  color: white;
+}
+
+.checkOutButton {
+  background-color: #E0ECF8;
+  color: black;
+  padding: 5px 10px;
+}
+
+.checkOutButton:hover {
+  background-color: #C2D4E6;
+}
+
+.TotalPrice {
+  font-size: 20px;
+  font-weight: bold;
+}

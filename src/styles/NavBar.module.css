@@ -1,0 +1,39 @@
+/* src/styles/NavBar.module.css */
+
+.navbar {
+  background-color: #F0F0F0; /* 背景色 */
+  padding: 10px 20px;     /* 內邊距 */
+  display: flex;
+  justify-content: space-between; /* 內容兩端對齊 */
+  align-items: center;
+  width: 100%;
+}
+
+.navList {
+  list-style: none;   /* 移除默認列表樣式 */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navItem {
+  margin-left: 20px;  /* 左邊距 */
+}
+
+.navItem:first-child {
+  margin-left: 0;     /* 第一個項目無左邊距 */
+}
+
+.navItem a {
+  text-decoration: none; /* 移除下劃線 */
+  font-size: 16px;    /* 字體大小 */
+}
+
+.navItem a:hover {
+  color: #f0a500;     /* 滑鼠懸停顏色變化 */
+}
+
+.navItem img {
+  vertical-align: middle; /* 垂直居中對齊圖片 */
+}
